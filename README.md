@@ -2,12 +2,12 @@
 
 ## Available Scripts
 
-In the project directory, you must run:
+**In the project directory, you must run:**
 
-### `npm install` (mandatory)
-Install all the needed dependencies
+### `npm install`
+Install all the needed dependencies.
 
-Then, you can run:
+**Then, you can run:**
 ### `npm start`
 
 Runs the app in the development mode.\

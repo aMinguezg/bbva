@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import ButtonGameComponent from "../components/button-game/button-game";
-import Header from "../components/header";
+import Header from "../components/header/header";
 import { createButtons } from "../services/factory";
 import {
   getGameResult,
@@ -11,6 +11,7 @@ import {
   getInitialPoints,
 } from "../services/functionality";
 import { useLocation } from "react-router-dom";
+import "../styles/game-style.scss";
 
 const GamePage = () => {
   const state = useLocation().state;
@@ -44,18 +45,21 @@ const GamePage = () => {
   }, [values]);
 
   return (
-    <section>
+    <section className="game-main-section">
       <Header playerName={name}></Header>
       <h1>Score: {score}</h1>
-      {buttons.map((button, index) => {
-        return (
-          <ButtonGameComponent
-            key={index}
-            buttonGame={button}
-            getValue={getValueToStartGame}
-          ></ButtonGameComponent>
-        );
-      })}
+      <section className="game-btns-section">
+        {buttons.map((button, index) => {
+          return (
+            <ButtonGameComponent
+              key={index}
+              buttonGame={button}
+              getValue={getValueToStartGame}
+            ></ButtonGameComponent>
+          );
+        })}
+      </section>
+
       <p>
         You: {values[0]} - Bot: {values[1]}
       </p>

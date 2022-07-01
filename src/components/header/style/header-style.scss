@@ -1,0 +1,32 @@
+@import "../../../styles/colors.scss";
+
+.header-component {
+  background-color: $primary-color;
+  color: $secondary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem;
+  min-height: 4.25rem;
+}
+
+.header-component > button {
+  padding: 0.25rem 1.5rem;
+  border-radius: 0.25rem;
+  background-color: $primary-color;
+  color: $secondary-color;
+  border: solid 1px $primary-color;
+  font-size: 1.5rem;
+}
+
+.header-component > p {
+  font-size: 1.2rem;
+  color: $secondary-color;
+  align-self: center;
+  justify-self: center;
+  margin-top: 1rem;
+}
+
+.header-component > img {
+  max-width: 6rem;
+}

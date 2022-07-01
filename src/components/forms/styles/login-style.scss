@@ -1,0 +1,33 @@
+@import "../../../styles/colors.scss";
+
+body {
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.login-form > input {
+  border: none;
+  border-bottom: 1px solid $primary-color;
+  outline: none;
+  color: $primary-color;
+  font-size: 1.2rem;
+}
+
+.login-form > button {
+  background-color: $primary-color;
+  color: $secondary-color;
+  font-weight: 500;
+  font-size: 1.2remt;
+  text-align: center;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  min-width: 14rem;
+}

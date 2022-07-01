@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/bbva/static/css/main.cea622b2.css",
+    "main.js": "/bbva/static/js/main.af2b957b.js",
+    "static/js/787.c8ffd4a8.chunk.js": "/bbva/static/js/787.c8ffd4a8.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/bbva/static/media/bootstrap-icons.7ff3ca6fa798de3f8ac2.woff",
+    "static/media/bootstrap-icons.woff2?": "/bbva/static/media/bootstrap-icons.f2539a501be3a673de05.woff2",
+    "service-worker.js": "/bbva/service-worker.js",
+    "index.html": "/bbva/index.html",
+    "main.cea622b2.css.map": "/bbva/static/css/main.cea622b2.css.map",
+    "main.af2b957b.js.map": "/bbva/static/js/main.af2b957b.js.map",
+    "787.c8ffd4a8.chunk.js.map": "/bbva/static/js/787.c8ffd4a8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cea622b2.css",
+    "static/js/main.af2b957b.js"
+  ]
+}

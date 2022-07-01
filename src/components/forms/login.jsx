@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
-import './styles/login-style.scss';
+import "./styles/login-style.scss";
 
 const Login = ({ destination }) => {
   const navigate = useNavigate();
@@ -13,7 +13,7 @@ const Login = ({ destination }) => {
   };
 
   return (
-    <form className="login-form" onSubmit={navigateTo}>
+    <form className="login-form" onSubmit={navigateTo} data-testid="login-form">
       <input
         ref={nameRef}
         id="inputName"
@@ -22,9 +22,7 @@ const Login = ({ destination }) => {
         autoFocus
         placeholder="Name*"
       />
-      <button type="submit">
-        JOIN
-      </button>
+      <button type="submit">JOIN</button>
     </form>
   );
 };

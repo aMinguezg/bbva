@@ -9,7 +9,7 @@ const Header = ({ playerName }) => {
     navigate(-1);
   };
   return (
-    <header className="header-component">
+    <header className="header-component" data-testid="header">
       <img src="https://bbvaengineering.github.io/challenges/assets/images/bbva.png" alt="" />
       {playerName ? (<p>Hi {playerName}</p>) : ''}
       {playerName ? (<button onClick={goBack}><i className="bi bi-box-arrow-right"></i></button>) : ''}

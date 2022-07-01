@@ -1,8 +1,17 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('Form is in the document', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  //Login
+  const loginForm = screen.getByTestId('login-form');
+  expect(loginForm).toBeInTheDocument(); 
+
+});
+
+test('Header is in the document', () => {
+  render(<App />);
+  // Header
+  const gameButton = screen.getByTestId('header');
+  expect(gameButton).toBeInTheDocument(); 
 });
